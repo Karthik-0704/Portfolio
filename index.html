@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Karthikeyan Sivasubramanian — ML Systems, MLOps, LLM Systems, AI Deployment" />
+  <title>Karthikeyan Sivasubramanian | Portfolio</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Karthikeyan Sivasubramanian | Portfolio" />
+  <meta property="og:description" content="ML Systems • MLOps • LLM Systems • AI Deployment" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Progress bar -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- Floating background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Karthikeyan</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Toggle theme">
+        <span class="icon" aria-hidden="true">☾</span>
+      </button>
+
+      <button id="menuToggle" class="btn btn--ghost nav__menu" type="button" aria-label="Open menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile" aria-hidden="true">
+      <div class="mobile__panel">
+        <a href="#about" class="mobile__link">About</a>
+        <a href="#projects" class="mobile__link">Projects</a>
+        <a href="#experience" class="mobile__link">Experience</a>
+        <a href="#publications" class="mobile__link">Publications</a>
+        <a href="#skills" class="mobile__link">Skills</a>
+        <a href="#contact" class="mobile__link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left reveal">
+          <div class="pill">
+            <span class="pulse" aria-hidden="true"></span>
+            MS CS @ Arizona State University (SCAI) • Tempe, AZ
+          </div>
+
+          <h1>
+            Building <span class="grad">AI/LLM systems</span> and
+            <span class="grad2">ML deployment</span> workflows.
+          </h1>
+
+          <p class="muted">
+            Focused on ML systems, MLOps/LLMOps, cloud deployment, and applied ML — from end-to-end pipelines
+            to production-style RAG and large-scale multilingual evaluation.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--secondary" href="assets/Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+
+          <div class="quick">
+            <button class="chip" id="copyEmail" type="button" title="Copy email">
+              <span aria-hidden="true">✉</span>
+              <span id="emailText">skarthiksubramanian0704@gmail.com</span>
+            </button>
+            <a class="chip" href="https://github.com/Karthik-0704" target="_blank" rel="noopener">
+              <span aria-hidden="true">↗</span> GitHub
+            </a>
+            <a class="chip" href="https://www.linkedin.com/in/karthik-s-095588259/" target="_blank" rel="noopener">
+              <span aria-hidden="true">↗</span> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__right reveal">
+          <div class="card stat">
+            <div class="stat__top">
+              <div class="avatar" aria-hidden="true">KS</div>
+              <div>
+                <div class="stat__name">Karthikeyan Sivasubramanian</div>
+                <div class="stat__role muted">ML Systems • MLOps • LLM Systems</div>
+              </div>
+            </div>
+
+            <div class="stat__grid">
+              <div class="stat__item">
+                <div class="k">Education</div>
+                <div class="v">MS CS (4.0/4.0)</div>
+              </div>
+              <div class="stat__item">
+                <div class="k">Deployment</div>
+                <div class="v">AWS • Docker • CI/CD</div>
+              </div>
+              <div class="stat__item">
+                <div class="k">LLM Systems</div>
+                <div class="v">RAG • LangChain • FAISS</div>
+              </div>
+              <div class="stat__item">
+                <div class="k">Computer Vision</div>
+                <div class="v">YOLO • OpenCV</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="badgeRow">
+              <span class="badge">Text-to-SQL + TRC</span>
+              <span class="badge">100+ Lang Eval</span>
+              <span class="badge">NVIDIA NIM RAG</span>
+              <span class="badge">A100 Experiments</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>About</h2>
+          <p class="muted">
+            MS in Computer Science at ASU (SCAI), with hands-on work across ML systems, LLM pipelines, deployment,
+            and experimentation.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>What I work on</h3>
+            <ul class="list">
+              <li>Production-style AI workflows: data → training → evaluation → deployment</li>
+              <li>LLM systems: RAG, schema-aware retrieval, reliability and safety for read-only evaluation</li>
+              <li>Cloud + DevOps: AWS, Docker, CI/CD, monitoring-minded deployments</li>
+              <li>Large-scale evaluation: multilingual translation and reasoning analysis</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Education</h3>
+            <div class="edu">
+              <div class="edu__item">
+                <div class="edu__title">Arizona State University (SCAI)</div>
+                <div class="muted">MS Computer Science • GPA 4.0/4.0 • 08/2024 – 05/2026</div>
+                <div class="muted small">
+                  Coursework: Mobile Computing, Information Assurance and Security, Principles of Programming Languages,
+                  Statistical Machine Learning, Knowledge Representation and Reasoning, NLP, Data Processing at Scale
+                </div>
+              </div>
+
+              <div class="edu__item">
+                <div class="edu__title">Vellore Institute of Technology</div>
+                <div class="muted">B.Tech ECE • GPA 8.82/10 • 09/2020 – 05/2024</div>
+                <div class="muted small">
+                  Coursework: Linear Algebra, DSA, DBMS, Computer Vision, ML, Deep Learning, Data Analytics, Business Analytics
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Projects</h2>
+          <p class="muted">A selection of systems I've built across LLM pipelines, evaluation, ML deployment, and MLOps.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Project filters">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="llm" type="button">LLM Systems</button>
+          <button class="filter" data-filter="mlops" type="button">MLOps / Deployment</button>
+          <button class="filter" data-filter="cv" type="button">Computer Vision</button>
+          <button class="filter" data-filter="eval" type="button">Evaluation</button>
+        </div>
+
+        <div class="cards" id="projectGrid">
+          <!-- Text-to-SQL -->
+          <article class="card project reveal" data-tags="llm eval">
+            <div class="project__top">
+              <h3>Interpretable Text-to-SQL with RAG + TRC</h3>
+              <span class="tag">10/2025 – 12/2025</span>
+            </div>
+            <p class="muted">
+              Built a retrieval-augmented Text-to-SQL system for SParC (multi-turn) and Spider using an interpretable
+              TRC intermediate representation with a hybrid LLaMA 3.1 8B (Groq) + fine-tuned Flan-T5 pipeline.
+            </p>
+            <ul class="bullets">
+              <li>Schema-aware vector retrieval (tables/columns) with semantic grounding and schema expansion (PK/FK).</li>
+              <li>Integrated Neo4j graph DB + MySQL schema ingestion via INFORMATION_SCHEMA with live sync.</li>
+              <li>Deterministic TRC→SQL compiler + optional LLM SQL generator for safe read-only evaluation.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">Neo4j</span><span class="chip2">MySQL</span><span class="chip2">RAG</span>
+              <span class="chip2">LLaMA 3.1</span><span class="chip2">Flan-T5</span><span class="chip2">Groq</span>
+            </div>
+          </article>
+
+          <!-- Multilingual Evaluation -->
+          <article class="card project reveal" data-tags="eval llm">
+            <div class="project__top">
+              <h3>Multilingual Translation + Cross-Lingual Generalization</h3>
+              <span class="tag">09/2025 – 12/2025</span>
+            </div>
+            <p class="muted">
+              Evaluated OLMo-1124-7B-Instruct across ~100 languages (FastText) on NLI, QA, medical QA, math reasoning, and MMLU.
+            </p>
+            <ul class="bullets">
+              <li>Forward/back translation pipeline using NLLB-200 and Hunyuan (7B + 7B Chimera).</li>
+              <li>Computed BLEU, METEOR, ROUGE-L, LaBSE, COMET; studied English CoT transfer across languages.</li>
+              <li>Analyzed gaps via Spearman correlation (token counts vs accuracy); ran A100 cluster experiments.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">NLLB-200</span><span class="chip2">COMET</span><span class="chip2">LaBSE</span>
+              <span class="chip2">A100</span><span class="chip2">FastText</span>
+            </div>
+          </article>
+
+          <!-- Personal RAG -->
+          <article class="card project reveal" data-tags="llm mlops">
+            <div class="project__top">
+              <h3>Personal RAG Assistant (NVIDIA NIM + FAISS + LangChain)</h3>
+              <span class="tag">07/2025 – 08/2025</span>
+            </div>
+            <p class="muted">
+              Plug-and-use RAG system for indexing and querying multi-folder academic/personal content with NVIDIA NIM
+              (Llama-3.1 70B Instruct) and a persistent FAISS store.
+            </p>
+            <ul class="bullets">
+              <li>Automatic MD5-based doc change detection for real-time re-indexing.</li>
+              <li>Interactive Streamlit UI orchestrated with LangChain; NVIDIA embeddings for semantic search.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">NVIDIA NIM</span><span class="chip2">FAISS</span><span class="chip2">LangChain</span>
+              <span class="chip2">Streamlit</span>
+            </div>
+          </article>
+
+          <!-- Poaching -->
+          <article class="card project reveal" data-tags=\"cv mlops\">
+            <div class="project__top">
+              <h3>Poaching Identification & Response (DL + RL)</h3>
+              <span class="tag">11/2024 – 01/2025</span>
+            </div>
+            <p class="muted">
+              AI-driven wildlife monitoring using YOLOv11 for elephant detection from aerial imagery, deployed on AWS EC2.
+            </p>
+            <ul class="bullets">
+              <li>Streamlit web server + React frontend, Node.js + Streamlit backend; Nginx reverse proxy.</li>
+              <li>CI/CD pipeline with GitHub Actions + Runners for automated updates.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">YOLOv11</span><span class="chip2">AWS EC2</span><span class="chip2">Nginx</span>
+              <span class="chip2">React</span><span class="chip2">Node.js</span><span class="chip2">CI/CD</span>
+            </div>
+          </article>
+
+          <!-- Phishing -->
+          <article class="card project reveal" data-tags="mlops eval">
+            <div class="project__top">
+              <h3>Phishing Detection (Automated MLOps)</h3>
+              <span class="tag">10/2024 – 01/2025</span>
+            </div>
+            <p class="muted">
+              End-to-end pipeline: ingestion → validation → transformation → training → evaluation with robust preprocessing and tracking.
+            </p>
+            <ul class="bullets">
+              <li>GridSearchCV tuning; KNN imputation + SMOTE; compared RF/DT/GB/LR with metrics tracked in MLflow (DagsHub).</li>
+              <li>ETL with MongoDB + AWS S3; containerized with Docker; CI/CD with GitHub Actions; deployed via ECR → EC2.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">Docker</span>
+              <span class="chip2">AWS ECR</span><span class="chip2">AWS EC2</span><span class="chip2">MongoDB</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Experience</h2>
+          <p class="muted">Research and industry internships spanning AI, CV, and embedded/IoT systems.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="card timeline__item reveal">
+            <div class="timeline__top">
+              <h3>Research Intern — Center for Advanced Data Science, VIT</h3>
+              <span class="tag">03/2023 – 10/2023 • Chennai, India</span>
+            </div>
+            <ul class="bullets">
+              <li>Two-stage Siamese neural network optimizing MobileNet-V2 for offline signature verification across 4 languages.</li>
+              <li>YOLO-based detection/extraction of signature regions before verification for isolated signature analysis.</li>
+              <li>Deployed a Python app on Raspberry Pi 4 for real-time signature detection and verification.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">Python</span><span class="chip2">OpenCV</span><span class="chip2">YOLO</span><span class="chip2">Raspberry Pi</span>
+            </div>
+          </div>
+
+          <div class="card timeline__item reveal">
+            <div class="timeline__top">
+              <h3>Embedded Systems Design Intern — Voltech Group</h3>
+              <span class="tag">07/2023 – 08/2023 • Chennai, India</span>
+            </div>
+            <ul class="bullets">
+              <li>IoT dashboard cluster for SCR/SMPS battery chargers with real-time temperature + DC voltage monitoring.</li>
+              <li>NodeMCU (ESP8266/ESP32) data collection and RESTful JSON payloads to ThingSpeak over HTTP.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">ESP8266/ESP32</span><span class="chip2">REST APIs</span><span class="chip2">IoT</span><span class="chip2">ThingSpeak</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Publications</h2>
+          <p class="muted">Peer-reviewed work and conference publication.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="card reveal">
+            <h3>Frontiers in Artificial Intelligence (2025)</h3>
+            <p class="muted">
+              Enhanced plant disease classification with attention-based CNN using squeeze-and-excitation mechanism.
+            </p>
+            <ul class="bullets">
+              <li>CNN-SEEIB with SE-enabled identity blocks; 99.79% accuracy on PlantVillage; 64ms inference on T4 GPU.</li>
+            </ul>
+            <div class="links">
+              <a class="btn btn--small btn--secondary" target="_blank" rel="noopener"
+                 href="https://doi.org/10.3389/frai.2025.1640549">DOI</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3>ACM IT IoT Smart City (2023) — Best Presentation</h3>
+            <p class="muted">
+              Leveraging Deep Learning for Improving Real-Time Stolen Vehicle Tracking in Smart Cities.
+            </p>
+            <ul class="bullets">
+              <li>YOLOv7 + DeepSORT system for multi-camera stolen vehicle detection with interactive mapping.</li>
+            </ul>
+            <div class="links">
+              <a class="btn btn--small btn--secondary" target="_blank" rel="noopener"
+                 href="https://dl.acm.org/doi/10.1145/3638985.3639026">DOI</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Skills</h2>
+          <p class="muted">Core tools and technologies from my projects and experience.</p>
+        </div>
+
+        <div class="skillGrid">
+          <div class="card reveal">
+            <h3>Languages & Frameworks</h3>
+            <div class="chipsWrap">
+              <span class="chip2">C</span><span class="chip2">C++</span><span class="chip2">Python</span><span class="chip2">Java</span><span class="chip2">Kotlin</span>
+              <span class="chip2">HTML</span><span class="chip2">CSS</span><span class="chip2">JavaScript</span><span class="chip2">React</span>
+              <span class="chip2">Django</span><span class="chip2">Node.js</span><span class="chip2">Bootstrap</span>
+              <span class="chip2">Flask</span><span class="chip2">Streamlit</span><span class="chip2">FastAPI</span><span class="chip2">REST APIs</span>
+              <span class="chip2">scikit-learn</span><span class="chip2">Seaborn</span><span class="chip2">OpenCV</span>
+              <span class="chip2">PyTorch</span><span class="chip2">TensorFlow</span><span class="chip2">Keras</span>
+              <span class="chip2">PySpark</span><span class="chip2">SparkML</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Tools, Cloud & Databases</h3>
+            <div class="chipsWrap">
+              <span class="chip2">Linux</span><span class="chip2">Windows</span><span class="chip2">macOS</span>
+              <span class="chip2">Git</span><span class="chip2">GitHub</span><span class="chip2">Docker</span><span class="chip2">CI/CD</span>
+              <span class="chip2">AWS EC2</span><span class="chip2">AWS S3</span><span class="chip2">AWS Lambda</span>
+              <span class="chip2">AWS ECR</span><span class="chip2">API Gateway</span><span class="chip2">Elastic Beanstalk</span><span class="chip2">SageMaker</span>
+              <span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">DVC</span>
+              <span class="chip2">Hugging Face</span><span class="chip2">Groq</span><span class="chip2">NVIDIA NIM</span>
+              <span class="chip2">vLLM</span><span class="chip2">LM Studio</span><span class="chip2">Ollama</span>
+              <span class="chip2">LangChain</span><span class="chip2">FAISS</span><span class="chip2">Neo4j</span>
+              <span class="chip2">PostgreSQL</span><span class="chip2">MySQL</span><span class="chip2">MongoDB</span>
+              <span class="chip2">Excel</span><span class="chip2">Tableau</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Core Competencies</h3>
+            <div class="chipsWrap">
+              <span class="chip2">ML Systems</span><span class="chip2">MLOps / LLMOps</span><span class="chip2">Experiment Tracking</span>
+              <span class="chip2">ETL Pipelines</span><span class="chip2">Data Processing at Scale</span><span class="chip2">Semantic Search</span>
+              <span class="chip2">LLMs</span><span class="chip2">Prompt Engineering</span><span class="chip2">RAG</span><span class="chip2">Knowledge Graphs</span>
+              <span class="chip2">Computer Vision</span><span class="chip2">Database Systems</span><span class="chip2">Android Development</span>
+              <span class="chip2">EDA</span><span class="chip2">Multilingual Translation</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Currently Exploring</h3>
+            <p class="muted small">
+              Conversational AI & agents, reliability-minded deployment, and scalable evaluation pipelines.
+            </p>
+            <div class="chipsWrap">
+              <span class="chip2">Conversational AI</span>
+              <span class="chip2">Agentic Workflows</span>
+              <span class="chip2">Service Reliability</span>
+              <span class="chip2">Observability</span>
+            </div>
+            <p class="muted small">
+              (You can update these chips anytime as your focus evolves.)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Contact</h2>
+          <p class="muted">Open to collaborations, research discussions, and engineering conversations.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>Reach out</h3>
+            <div class="contactRow">
+              <span class="muted">Email</span>
+              <button class="linkBtn" id="copyEmail2" type="button">skarthiksubramanian0704@gmail.com (copy)</button>
+            </div>
+            <div class="contactRow">
+              <span class="muted">LinkedIn</span>
+              <a class="linkBtn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/karthik-s-095588259/">linkedin.com/in/karthik-s-095588259</a>
+            </div>
+            <div class="contactRow">
+              <span class="muted">GitHub</span>
+              <a class="linkBtn" target="_blank" rel="noopener" href="https://github.com/Karthik-0704">github.com/Karthik-0704</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="muted small">
+              Tip: Add project repo links later by turning each project card into a “View Repo” button.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Quick message</h3>
+            <p class="muted small">This opens your email client with a pre-filled subject.</p>
+            <a class="btn btn--primary"
+               href="mailto:skarthiksubramanian0704@gmail.com?subject=Portfolio%20-%20Karthikeyan%20Sivasubramanian&body=Hi%20Karthikeyan%2C%0A%0A"
+            >
+              Email Me
+            </a>
+
+            <div class="divider"></div>
+
+            <p class="muted small">
+              Want a custom domain later? You can add one in GitHub Pages settings (e.g., karthikeyan.ai).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="muted small">© <span id="year"></span> Karthikeyan Sivasubramanian</span>
+        <a class="muted small" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
