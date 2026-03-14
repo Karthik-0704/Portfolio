@@ -321,13 +321,15 @@
         <div class="timeline">
           <div class="card timeline__item reveal">
             <div class="timeline__top">
-              <h3>Research Intern — Center for Advanced Data Science, VIT</h3>
+              <h3>ML Research Intern — Center for Advanced Data Science, VIT</h3>
               <span class="tag">03/2023 – 10/2023 • Chennai, India</span>
             </div>
             <ul class="bullets">
-              <li>Two-stage Siamese neural network optimizing MobileNet-V2 for offline signature verification across 4 languages.</li>
-              <li>YOLO-based detection/extraction of signature regions before verification for isolated signature analysis.</li>
-              <li>Deployed a Python app on Raspberry Pi 4 for real-time signature detection and verification.</li>
+              <li>Achieved 97% average accuracy in multilingual signature classification across 4 languages, by designing a two-stage Siamese 
+              network with MobileNet-V2, trained using TensorFlow tf.data (parallel map, prefetch) and A100 GPU acceleration, reducing 
+              training time by ~18% through input-pipeline optimization.</li>
+              <li>Attained 88% recall in signature detection by implementing YOLOv5/v7/v8 (DataLoader parallelism) for region extraction and 
+              deploying MobileNet-V2 via AWS SageMaker endpoints, with a lightweight detection pipeline running locally on a Raspberry Pi 4. </li>
             </ul>
             <div class="stack">
               <span class="chip2">Python</span><span class="chip2">OpenCV</span><span class="chip2">YOLO</span><span class="chip2">Raspberry Pi</span>
@@ -340,8 +342,10 @@
               <span class="tag">07/2023 – 08/2023 • Chennai, India</span>
             </div>
             <ul class="bullets">
-              <li>IoT dashboard cluster for SCR/SMPS battery chargers with real-time temperature + DC voltage monitoring.</li>
-              <li>NodeMCU (ESP8266/ESP32) data collection and RESTful JSON payloads to ThingSpeak over HTTP.</li>
+              <li>Built an IoT-based telemetry pipeline for SMPS battery chargers using a NodeMCU web server, acquiring voltage and 
+              temperature via ADCs and enabling real-time operational monitoring. </li>
+              <li> Extended the pipeline with GRU/LSTM-based time-series forecasting on voltage–current data, achieving ~20% lower RMSE over 
+              a naïve baseline and operationalized model inference via AWS SageMaker, API Gateway, Lambda, and CloudWatch. </li>
             </ul>
             <div class="stack">
               <span class="chip2">ESP8266/ESP32</span><span class="chip2">REST APIs</span><span class="chip2">IoT</span><span class="chip2">ThingSpeak</span>
