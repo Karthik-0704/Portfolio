@@ -187,6 +187,26 @@
               </div>
             </div>
           </div>
+
+          <!-- License Plate + Lane Detection -->
+          <article class="card project reveal" data-tags="cv">
+            <div class="project__top">
+              <h3>Real-Time License Plate + Lane Detection</h3>
+              <span class="tag">2024</span>
+            </div>
+            <p class="muted">
+              Built a real-time computer vision pipeline for license plate detection and lane monitoring using YOLOv7 and classical vision techniques.
+            </p>
+            <ul class="bullets">
+              <li>Developed a YOLOv7-based license plate detector for real-time localization in traffic scenes.</li>
+              <li>Integrated lane detection using Hough Transforms and Bird’s-Eye transformation to identify and track lane-switching behavior.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">YOLOv7</span><span class="chip2">OpenCV</span><span class="chip2">Hough Transform</span>
+              <span class="chip2">Bird’s-Eye View</span><span class="chip2">Computer Vision</span>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -226,6 +246,26 @@
               <span class="chip2">Flan-T5</span><span class="chip2">MySQL</span><span class="chip2">Groq</span>
             </div>
           </article>
+
+          <!-- Multilingual Evaluation -->
+          <article class="card project reveal" data-tags="eval llm">
+            <div class="project__top">
+              <h3>Multilingual Translation + Cross-Lingual Generalization</h3>
+              <span class="tag">09/2025 – 12/2025</span>
+            </div>
+            <p class="muted">
+              Evaluated OLMo-1124-7B-Instruct across ~100 languages (FastText) on NLI, QA, medical QA, math reasoning, and MMLU.
+            </p>
+            <ul class="bullets">
+              <li>Built a forward/back translation pipeline using NLLB-200 and Hunyuan (7B + 7B Chimera) for multilingual evaluation.</li>
+              <li>Computed BLEU, METEOR, ROUGE-L, LaBSE, and COMET; analyzed English CoT transfer and accuracy gaps via Spearman correlation on A100 cluster runs.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">NLLB-200</span><span class="chip2">COMET</span><span class="chip2">LaBSE</span>
+              <span class="chip2">A100</span><span class="chip2">FastText</span>
+            </div>
+          </article>
+
 
           <article class="card project reveal" data-tags="llm mlops">
             <div class="project__top">
@@ -320,7 +360,27 @@
               <span class="chip2">Railway</span><span class="chip2">Redis</span><span class="chip2">LangGraph</span>
             </div>
           </article>
-        </div>        </div>
+        </div>
+          <!-- Phishing -->
+          <article class="card project reveal" data-tags="mlops eval">
+            <div class="project__top">
+              <h3>Phishing Detection (Automated MLOps)</h3>
+              <span class="tag">10/2024 – 01/2025</span>
+            </div>
+            <p class="muted">
+              Built an end-to-end MLOps pipeline spanning ingestion, validation, transformation, training, and evaluation with robust preprocessing and experiment tracking.
+            </p>
+            <ul class="bullets">
+              <li>Performed GridSearchCV tuning with KNN imputation and SMOTE, comparing RF/DT/GB/LR models while tracking metrics in MLflow with DagsHub.</li>
+              <li>Implemented ETL with MongoDB and AWS S3, containerized the workflow with Docker, and deployed via GitHub Actions CI/CD through ECR to EC2.</li>
+            </ul>
+            <div class="stack">
+              <span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">Docker</span>
+              <span class="chip2">AWS ECR</span><span class="chip2">AWS EC2</span><span class="chip2">MongoDB</span>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
