@@ -1,589 +1,530 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Karthikeyan Sivasubramanian — ML Systems, MLOps, LLM Systems, AI Deployment" />
-  <title>Karthikeyan Sivasubramanian | Portfolio</title>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Karthikeyan Sivasubramanian | Portfolio" />
-  <meta property="og:description" content="ML Systems • MLOps • LLM Systems • AI Deployment" />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Karthikeyan Sivasubramanian — ML Systems, MLOps, LLM Systems, AI Deployment" name="description"/>
+<title>Karthikeyan Sivasubramanian | Portfolio</title>
+<!-- Open Graph -->
+<meta content="Karthikeyan Sivasubramanian | Portfolio" property="og:title"/>
+<meta content="ML Systems • MLOps • LLM Systems • AI Deployment" property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="styles.css" rel="stylesheet"/>
 </head>
-
 <body>
-  <!-- Progress bar -->
-  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-
-  <!-- Floating background blobs -->
-  <div class="bg-blobs" aria-hidden="true">
-    <span class="blob b1"></span>
-    <span class="blob b2"></span>
-    <span class="blob b3"></span>
-  </div>
-
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand__dot"></span>
-        <span class="brand__text">Karthikeyan</span>
-      </a>
-
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Toggle theme">
-        <span class="icon" aria-hidden="true">☾</span>
-      </button>
-
-      <button id="menuToggle" class="btn btn--ghost nav__menu" type="button" aria-label="Open menu">
-        <span aria-hidden="true">☰</span>
-      </button>
-    </div>
-
-    <div id="mobileMenu" class="mobile" aria-hidden="true">
-      <div class="mobile__panel">
-        <a href="#about" class="mobile__link">About</a>
-        <a href="#projects" class="mobile__link">Projects</a>
-        <a href="#experience" class="mobile__link">Experience</a>
-        <a href="#publications" class="mobile__link">Publications</a>
-        <a href="#skills" class="mobile__link">Skills</a>
-        <a href="#contact" class="mobile__link">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main id="top">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__left reveal">
-          <div class="pill">
-            <span class="pulse" aria-hidden="true"></span>
+<!-- Progress bar -->
+<div aria-hidden="true" class="progress"><span id="progressBar"></span></div>
+<!-- Floating background blobs -->
+<div aria-hidden="true" class="bg-blobs">
+<span class="blob b1"></span>
+<span class="blob b2"></span>
+<span class="blob b3"></span>
+</div>
+<!-- NAV -->
+<header class="nav">
+<div class="container nav__inner">
+<a aria-label="Go to top" class="brand" href="#top">
+<span class="brand__dot"></span>
+<span class="brand__text">Karthikeyan</span>
+</a>
+<nav aria-label="Primary" class="nav__links">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#publications">Publications</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+<button aria-label="Toggle theme" class="btn btn--ghost" id="themeToggle" type="button">
+<span aria-hidden="true" class="icon">☾</span>
+</button>
+<button aria-label="Open menu" class="btn btn--ghost nav__menu" id="menuToggle" type="button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+<div aria-hidden="true" class="mobile" id="mobileMenu">
+<div class="mobile__panel">
+<a class="mobile__link" href="#about">About</a>
+<a class="mobile__link" href="#projects">Projects</a>
+<a class="mobile__link" href="#experience">Experience</a>
+<a class="mobile__link" href="#publications">Publications</a>
+<a class="mobile__link" href="#skills">Skills</a>
+<a class="mobile__link" href="#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- HERO -->
+<main id="top">
+<section class="hero">
+<div class="container hero__grid">
+<div class="hero__left reveal">
+<div class="pill">
+<span aria-hidden="true" class="pulse"></span>
             MS CS @ Arizona State University (SCAI) • Tempe, AZ
           </div>
-
-          <h1>
+<h1>
             Building <span class="grad">AI/LLM systems</span> and
             <span class="grad2">ML deployment</span> workflows.
           </h1>
-
-          <p class="muted">
+<p class="muted">
             Focused on ML systems, MLOps/LLMOps, cloud deployment, and applied ML — from end-to-end pipelines
             to production-style RAG and large-scale multilingualuation.
           </p>
-
-          <div class="cta">
-            <a class="btn btn--primary" href="#projects">View Projects</a>
-            <a class="btn btn--secondary" href="assets/Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-          </div>
-
-          <div class="quick">
-            <button class="chip" id="copyEmail" type="button" title="Copy email">
-              <span aria-hidden="true">✉</span>
-              <span id="emailText">skarthiksubramanian0704@gmail.com</span>
-            </button>
-            <a class="chip" href="https://github.com/Karthik-0704" target="_blank" rel="noopener">
-              <span aria-hidden="true">↗</span> GitHub
+<div class="cta">
+<a class="btn btn--primary" href="#projects">View Projects</a>
+<!-- Resume file note: place your PDF at assets/Resume.pdf so this button downloads it. -->
+<a class="btn btn--secondary" download="Karthikeyan_Sivasubramanian_Resume.pdf" href="assets/Resume.pdf" rel="noopener" target="_blank">Download Resume</a>
+</div>
+<div class="quick">
+<button class="chip" id="copyEmail" title="Copy email" type="button">
+<span aria-hidden="true">✉</span>
+<span id="emailText">skarthiksubramanian0704@gmail.com</span>
+</button>
+<a class="chip" href="https://github.com/Karthik-0704" rel="noopener" target="_blank">
+<span aria-hidden="true">↗</span> GitHub
             </a>
-            <a class="chip" href="https://www.linkedin.com/in/karthik-s-095588259/" target="_blank" rel="noopener">
-              <span aria-hidden="true">↗</span> LinkedIn
+<a class="chip" href="https://www.linkedin.com/in/karthik-s-095588259/" rel="noopener" target="_blank">
+<span aria-hidden="true">↗</span> LinkedIn
             </a>
-          </div>
-        </div>
-
-        <aside class="hero__right reveal">
-          <div class="card stat">
-            <div class="stat__top">
-              <div class="avatar" aria-hidden="true">KS</div>
-              <div>
-                <div class="stat__name">Karthikeyan Sivasubramanian</div>
-                <div class="stat__role muted">AI/LLM Apps • Data Systems • MLOps</div>
-              </div>
-            </div>
-
-            <div class="stat__grid">
-              <div class="stat__item">
-                <div class="k">Education</div>
-                <div class="v">MS CS @ ASU</div>
-              </div>
-              <div class="stat__item">
-                <div class="k">Full-Stack AI</div>
-                <div class="v">FastAPI • React • OAuth</div>
-              </div>
-              <div class="stat__item">
-                <div class="k">LLM Systems</div>
-                <div class="v">RAG • Agents • Text-to-SQL</div>
-              </div>
-              <div class="stat__item">
-                <div class="k">Data Platforms</div>
-                <div class="v">Kafka • Spark • PostgreSQL</div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="badgeRow">
-              <span class="badge">Finance AI Assistant</span>
-              <span class="badge">Travel LLM Agents</span>
-              <span class="badge">Football Analytics</span>
-              <span class="badge">Real-Time Job Analytics</span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>About</h2>
-          <p class="muted">
+</div>
+</div>
+<aside class="hero__right reveal">
+<div class="card stat">
+<div class="stat__top">
+<div aria-hidden="true" class="avatar">KS</div>
+<div>
+<div class="stat__name">Karthikeyan Sivasubramanian</div>
+<div class="stat__role muted">AI/LLM Apps • Data Systems • MLOps</div>
+</div>
+</div>
+<div class="stat__grid">
+<div class="stat__item">
+<div class="k">Education</div>
+<div class="v">MS CS @ ASU</div>
+</div>
+<div class="stat__item">
+<div class="k">Full-Stack AI</div>
+<div class="v">FastAPI • React • OAuth</div>
+</div>
+<div class="stat__item">
+<div class="k">LLM Systems</div>
+<div class="v">RAG • Agents • Text-to-SQL</div>
+</div>
+<div class="stat__item">
+<div class="k">Data Platforms</div>
+<div class="v">Kafka • Spark • PostgreSQL</div>
+</div>
+</div>
+<div class="divider"></div>
+<div class="badgeRow">
+<span class="badge">Finance AI Assistant</span>
+<span class="badge">Travel LLM Agents</span>
+<span class="badge">Football Analytics</span>
+<span class="badge">Real-Time Job Analytics</span>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="section" id="about">
+<div class="container">
+<div class="section__head reveal">
+<h2>About</h2>
+<p class="muted">
             MS in Computer Science at ASU (SCAI), with hands-on work across ML systems, LLM pipelines, RLHF, Agentic Workflows, Edge Computing, Deployment,
             and Experimentation.
           </p>
-        </div>
-
-        <div class="grid2">
-          <div class="card reveal">
-            <h3>What I work on</h3>
-            <ul class="list">
-              <li>Production-style AI workflows: data → training →uation → deployment</li>
-              <li>LLM systems: RAG, schema-aware retrieval, reliability and safety for read-onlyuation</li>
-              <li>Cloud + DevOps: AWS, Docker, CI/CD, monitoring-minded deployments</li>
-              <li>Large-scaleuation: multilingual translation and reasoning analysis</li>
-            </ul>
-          </div>
-
-          <div class="card reveal">
-            <h3>Education</h3>
-            <div class="edu">
-              <div class="edu__item">
-                <div class="edu__title">Arizona State University (SCAI)</div>
-                <div class="muted">MS Computer Science • GPA 4.0/4.0 • 08/2024 – 05/2026</div>
-                <div class="muted small">
+</div>
+<div class="grid2">
+<div class="card reveal">
+<h3>What I work on</h3>
+<ul class="list">
+<li>Production-style AI workflows: data → training →uation → deployment</li>
+<li>LLM systems: RAG, schema-aware retrieval, reliability and safety for read-onlyuation</li>
+<li>Cloud + DevOps: AWS, Docker, CI/CD, monitoring-minded deployments</li>
+<li>Large-scaleuation: multilingual translation and reasoning analysis</li>
+</ul>
+</div>
+<div class="card reveal">
+<h3>Education</h3>
+<div class="edu">
+<div class="edu__item">
+<div class="edu__title">Arizona State University (SCAI)</div>
+<div class="muted">MS Computer Science • GPA 4.0/4.0 • 08/2024 – 05/2026</div>
+<div class="muted small">
                   Coursework: Information Assurance and Security, Mobile Computing, Principles of Programming Languages,
                   Statistical Machine Learning, Data Visualization, Data Mining, Data Processing at Scale,
                   Knowledge Representation and Reasoning, Semantic Web Mining, Software Validation, Verification and Testing
                 </div>
-              </div>
-
-              <div class="edu__item">
-                <div class="edu__title">Vellore Institute of Technology</div>
-                <div class="muted">B.Tech ECE • GPA 8.82/10 • 09/2020 – 05/2024</div>
-                <div class="muted small">
+</div>
+<div class="edu__item">
+<div class="edu__title">Vellore Institute of Technology</div>
+<div class="muted">B.Tech ECE • GPA 8.82/10 • 09/2020 – 05/2024</div>
+<div class="muted small">
                   Coursework: Linear Algebra, DSA, DBMS, Computer Vision, ML, Deep Learning, Data Analytics, Business Analytics
                 </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section section--alt">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Projects</h2>
-          <p class="muted">A selection of systems I’ve built across LLM applications, data/streaming platforms, analytics, and production-style AI deployment.</p>
-        </div>
-
-        <div class="filters reveal" role="group" aria-label="Project filters">
-          <button class="filter active" data-filter="all" type="button">All</button>
-          <button class="filter" data-filter="llm" type="button">LLM/RAGs/Agents</button>
-          <button class="filter" data-filter="mlops" type="button">MLOps / Deployment</button>
-          <button class="filter" data-filter="cv" type="button">Computer Vision</button>
-          <button class="filter" data-filter="fullstack" type="button">Full-Stack / Databases</button>
-        </div>
-
-        <div class="cards" id="projectGrid">
-          <article class="card project reveal" data-tags="llm">
-            <div class="project__top">
-              <h3>Interpretable Text-to-SQL Query Generation</h3>
-              <span class="tag">10/2025 – 12/2025</span>
-            </div>
-            <p class="muted">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="section section--alt" id="projects">
+<div class="container">
+<div class="section__head reveal">
+<h2>Projects</h2>
+<p class="muted">A selection of systems I’ve built across LLM applications, data/streaming platforms, analytics, and production-style AI deployment.</p>
+</div>
+<div aria-label="Project filters" class="filters reveal" role="group">
+<button class="filter active" data-filter="all" type="button">All</button>
+<button class="filter" data-filter="llm" type="button">LLM/RAGs/Agents</button>
+<button class="filter" data-filter="mlops" type="button">MLOps / Deployment</button>
+<button class="filter" data-filter="cv" type="button">Computer Vision</button>
+<button class="filter" data-filter="fullstack" type="button">Full-Stack / Databases</button>
+</div>
+<div class="cards" id="projectGrid">
+<article class="card project reveal" data-tags="llm fullstack">
+<div class="project__top">
+<h3>Interpretable Text-to-SQL Query Generation</h3>
+<span class="tag">10/2025 – 12/2025</span>
+</div>
+<p class="muted">
               Built an interpretable Text-to-SQL system that combines Graph RAG, schema-aware retrieval, and TRC-based logical planning for robust SQL generation.
             </p>
-            <ul class="bullets">
-              <li>Improved Text-to-SQL execution accuracy by up to 2.3× using an interpretable RAG pipeline with TRC-based logical planning.</li>
-              <li>Integrated Graph RAG with Neo4j and FAISS for schema-aware context grounding before SQL generation.</li>
-              <li>Recovered ~15% failed queries using a self-healing TRC-to-SQL compiler with execution-error feedback on Spider and SParC datasets.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">Neo4j</span><span class="chip2">FAISS</span><span class="chip2">LLaMA-3.1-8B</span>
-              <span class="chip2">Flan-T5</span><span class="chip2">MySQL</span><span class="chip2">Groq</span>
-            </div>
-          </article>
-
-          <!-- Multilingual Evaluation -->
-          <article class="card project reveal" data-tags="llm">
-            <div class="project__top">
-              <h3>Multilingual Translation + Cross-Lingual Generalization</h3>
-              <span class="tag">09/2025 – 12/2025</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Improved Text-to-SQL execution accuracy by up to 2.3× using an interpretable RAG pipeline with TRC-based logical planning.</li>
+<li>Integrated Graph RAG with Neo4j and FAISS for schema-aware context grounding before SQL generation.</li>
+<li>Recovered ~15% failed queries using a self-healing TRC-to-SQL compiler with execution-error feedback on Spider and SParC datasets.</li>
+</ul>
+<div class="stack">
+<span class="chip2">Neo4j</span><span class="chip2">FAISS</span><span class="chip2">LLaMA-3.1-8B</span>
+<span class="chip2">Flan-T5</span><span class="chip2">MySQL</span><span class="chip2">Groq</span>
+</div>
+</article>
+<!-- Multilingual Evaluation -->
+<article class="card project reveal" data-tags="llm">
+<div class="project__top">
+<h3>Multilingual Translation + Cross-Lingual Generalization</h3>
+<span class="tag">09/2025 – 12/2025</span>
+</div>
+<p class="muted">
               Evaluated OLMo-1124-7B-Instruct across ~100 languages (FastText) on NLI, QA, medical QA, math reasoning, and MMLU.
             </p>
-            <ul class="bullets">
-              <li>Built a forward/back translation pipeline using NLLB-200 and Hunyuan (7B + 7B Chimera) for multilingualuation.</li>
-              <li>Computed BLEU, METEOR, ROUGE-L, LaBSE, and COMET; analyzed English CoT transfer and accuracy gaps via Spearman correlation on A100 cluster runs.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">NLLB-200</span><span class="chip2">COMET</span><span class="chip2">LaBSE</span>
-              <span class="chip2">A100</span><span class="chip2">FastText</span>
-            </div>
-          </article>
-
-
-          <article class="card project reveal" data-tags="llm mlops">
-            <div class="project__top">
-              <h3>Personal RAG Assistant</h3>
-              <span class="tag">10/2025 – 11/2025</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Built a forward/back translation pipeline using NLLB-200 and Hunyuan (7B + 7B Chimera) for multilingualuation.</li>
+<li>Computed BLEU, METEOR, ROUGE-L, LaBSE, and COMET; analyzed English CoT transfer and accuracy gaps via Spearman correlation on A100 cluster runs.</li>
+</ul>
+<div class="stack">
+<span class="chip2">NLLB-200</span><span class="chip2">COMET</span><span class="chip2">LaBSE</span>
+<span class="chip2">A100</span><span class="chip2">FastText</span>
+</div>
+</article>
+<article class="card project reveal" data-tags="llm mlops">
+<div class="project__top">
+<h3>Personal RAG Assistant</h3>
+<span class="tag">10/2025 – 11/2025</span>
+</div>
+<p class="muted">
               Built a production-style personal RAG assistant with structured retrievaluation, incremental indexing, and a document-query interface.
             </p>
-            <ul class="bullets">
-              <li>Improved retriperformance of a document-level RAG system by incorporating query expansion, re-ranking, and semantic chunking, using MRR/nDCG-baseduation with Pydantic-structured pipelines.</li>
-              <li>Enabled production-ready RAG workflows by implementing MD5-based incremental re-indexing, LangChain orchestration, and a Streamlit interface, ensuring semantic retriwith NVIDIA embeddings.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">NVIDIA NIM</span><span class="chip2">LLaMA-3.1-70B</span><span class="chip2">FAISS/Chroma</span>
-              <span class="chip2">Pydantic</span><span class="chip2">LangChain</span><span class="chip2">Streamlit</span>
-            </div>
-          </article>
-
-          <article class="card project reveal" data-tags="llm mlops">
-            <div class="project__top">
-              <h3>BonVoyage - AI Travel Webapp</h3>
-              <span class="tag">12/2025 – 02/2026</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Improved retriperformance of a document-level RAG system by incorporating query expansion, re-ranking, and semantic chunking, using MRR/nDCG-baseduation with Pydantic-structured pipelines.</li>
+<li>Enabled production-ready RAG workflows by implementing MD5-based incremental re-indexing, LangChain orchestration, and a Streamlit interface, ensuring semantic retriwith NVIDIA embeddings.</li>
+</ul>
+<div class="stack">
+<span class="chip2">NVIDIA NIM</span><span class="chip2">LLaMA-3.1-70B</span><span class="chip2">FAISS/Chroma</span>
+<span class="chip2">Pydantic</span><span class="chip2">LangChain</span><span class="chip2">Streamlit</span>
+</div>
+</article>
+<article class="card project reveal" data-tags="llm mlops fullstack">
+<div class="project__top">
+<h3>BonVoyage - AI Travel Webapp</h3>
+<span class="tag">12/2025 – 02/2026</span>
+</div>
+<p class="muted">
               Developed an AI-powered travel planning platform that converts natural-language travel requests into personalized itineraries and live travel recommendations.
             </p>
-            <ul class="bullets">
-              <li>Built an AI-driven travel planning platform that generated personalized itineraries from natural language prompts, streamlining trip planning and recommendation workflows.</li>
-              <li>Developed a multi-stage LLM agent pipeline using Llama-3.1 via HuggingFace and integrated RapidAPI-based flight and hotel data retrito deliver real-time travel suggestions.</li>
-              <li>Deployed a scalable full-stack application on AWS using FastAPI on EC2, React on S3, PostgreSQL on RDS, and Redis caching to improve responsiveness and backend performance.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">FastAPI</span><span class="chip2">React</span><span class="chip2">PostgreSQL</span>
-              <span class="chip2">Redis</span><span class="chip2">AWS</span><span class="chip2">Llama-3.1</span>
-            </div>
-          </article>
-
-          <article class="card project reveal" data-tags="llm mlops">
-            <div class="project__top">
-              <h3>Track Your Finance - AI Finance Assistant</h3>
-              <span class="tag">03/2026 – 05/2026</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Built an AI-driven travel planning platform that generated personalized itineraries from natural language prompts, streamlining trip planning and recommendation workflows.</li>
+<li>Developed a multi-stage LLM agent pipeline using Llama-3.1 via HuggingFace and integrated RapidAPI-based flight and hotel data retrito deliver real-time travel suggestions.</li>
+<li>Deployed a scalable full-stack application on AWS using FastAPI on EC2, React on S3, PostgreSQL on RDS, and Redis caching to improve responsiveness and backend performance.</li>
+</ul>
+<div class="stack">
+<span class="chip2">FastAPI</span><span class="chip2">React</span><span class="chip2">PostgreSQL</span>
+<span class="chip2">Redis</span><span class="chip2">AWS</span><span class="chip2">Llama-3.1</span>
+</div>
+</article>
+<article class="card project reveal" data-tags="llm fullstack">
+<div class="project__top">
+<h3>Track Your Finance - AI Finance Assistant</h3>
+<span class="tag">03/2026 – 05/2026</span>
+</div>
+<p class="muted">
               Built an AI finance assistant for secure spending analysis, transaction categorization, and personalized credit-card savings recommendations.
             </p>
-            <ul class="bullets">
-              <li>Improved personal spending analysis and financial decision support by building an AI-powered finance assistant that categorizes transactions, generates spending insights, and recommends cost-saving credit card options.</li>
-              <li>Enabled secure, end-to-end financial analytics workflows by developing a full-stack platform with FastAPI, React, MongoDB, and OAuth, integrating Gemini-based expense analysis with real-time financial data ingestion through web scraping.</li>
-              <li>Increased recommendation accuracy and spending categorization reliability by processing anduating 10,000+ simulated transactions, validating personalized savings insights and credit card optimization logic.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">FastAPI</span><span class="chip2">React</span><span class="chip2">MongoDB</span>
-              <span class="chip2">Gemini</span><span class="chip2">OAuth</span><span class="chip2">Web Scraping</span>
-            </div>
-          </article>
-
-          <article class="card project reveal" data-tags="mlops">
-            <div class="project__top">
-              <h3>Real-time Job Market Analytics Platform</h3>
-              <span class="tag">10/2025 – 01/2026</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Improved personal spending analysis and financial decision support by building an AI-powered finance assistant that categorizes transactions, generates spending insights, and recommends cost-saving credit card options.</li>
+<li>Enabled secure, end-to-end financial analytics workflows by developing a full-stack platform with FastAPI, React, MongoDB, and OAuth, integrating Gemini-based expense analysis with real-time financial data ingestion through web scraping.</li>
+<li>Increased recommendation accuracy and spending categorization reliability by processing anduating 10,000+ simulated transactions, validating personalized savings insights and credit card optimization logic.</li>
+</ul>
+<div class="stack">
+<span class="chip2">FastAPI</span><span class="chip2">React</span><span class="chip2">MongoDB</span>
+<span class="chip2">Gemini</span><span class="chip2">OAuth</span><span class="chip2">Web Scraping</span>
+</div>
+</article>
+<article class="card project reveal" data-tags="mlops fullstack">
+<div class="project__top">
+<h3>Real-time Job Market Analytics Platform</h3>
+<span class="tag">10/2025 – 01/2026</span>
+</div>
+<p class="muted">
               Built a streaming analytics platform for real-time job-market intelligence with low-latency trend computation, serving, and cloud-native deployment.
             </p>
-            <ul class="bullets">
-              <li>Built a real-time streaming pipeline using Kafka and Spark Streaming to compute rolling job-skill and company trends, serving low-latency results via Redis and persisting historical aggregates in PostgreSQL.</li>
-              <li>Deployed FastAPI, Spring Boot, and React services behind Nginx using Docker Compose and demonstrated scalable orchestration on AWS EKS.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">Kafka</span><span class="chip2">Spark Streaming</span><span class="chip2">Redis</span>
-              <span class="chip2">PostgreSQL</span><span class="chip2">FastAPI</span><span class="chip2">AWS EKS</span>
-            </div>
-          </article>
-
-          <article class="card project reveal" data-tags="mlops llm">
-            <div class="project__top">
-              <h3>Football Analytics Platform — Data &amp; Live Pipelines</h3>
-              <span class="tag">01/2025 – Present</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Built a real-time streaming pipeline using Kafka and Spark Streaming to compute rolling job-skill and company trends, serving low-latency results via Redis and persisting historical aggregates in PostgreSQL.</li>
+<li>Deployed FastAPI, Spring Boot, and React services behind Nginx using Docker Compose and demonstrated scalable orchestration on AWS EKS.</li>
+</ul>
+<div class="stack">
+<span class="chip2">Kafka</span><span class="chip2">Spark Streaming</span><span class="chip2">Redis</span>
+<span class="chip2">PostgreSQL</span><span class="chip2">FastAPI</span><span class="chip2">AWS EKS</span>
+</div>
+</article>
+<article class="card project reveal" data-tags="mlops llm fullstack">
+<div class="project__top">
+<h3>Football Analytics Platform — Data &amp; Live Pipelines</h3>
+<span class="tag">01/2025 – Present</span>
+</div>
+<p class="muted">
               Building a multi-league football analytics platform with scalable ingestion, live refresh pipelines, analytics views, and agentic retriworkflows.
             </p>
-            <ul class="bullets">
-              <li>Designed scalable ingestion pipelines using API-Football, supporting full dataset bootstrapping and conditional refresh with idempotent PostgreSQL upserts and change-only updates.</li>
-              <li>Developed a multi-league analytics platform using React and Supabase, featuring dynamic theming along with standings, match, team, and player views, and season leaderboard functionality.</li>
-              <li>Architected a cost-efficient real-time ingestion system using a Railway scheduler/poller with serverless executors, incorporating windowed execution, conditional writes to minimize API and database load, Redis-based caching.</li>
-              <li>Currently extending the system with orchestrated agentic workflows for analytics and retrieval, including a Text-to-SQL interface on a unified Postgres/Redis backend.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">Python</span><span class="chip2">Supabase</span><span class="chip2">PostgreSQL</span>
-              <span class="chip2">Railway</span><span class="chip2">Redis</span><span class="chip2">LangGraph</span>
-            </div>
-          </article>
-
-          <!-- License Plate + Lane Detection -->
-          <article class="card project reveal" data-tags="cv">
-            <div class="project__top">
-              <h3>Real-Time License Plate + Lane Detection</h3>
-              <span class="tag">2024</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Designed scalable ingestion pipelines using API-Football, supporting full dataset bootstrapping and conditional refresh with idempotent PostgreSQL upserts and change-only updates.</li>
+<li>Developed a multi-league analytics platform using React and Supabase, featuring dynamic theming along with standings, match, team, and player views, and season leaderboard functionality.</li>
+<li>Architected a cost-efficient real-time ingestion system using a Railway scheduler/poller with serverless executors, incorporating windowed execution, conditional writes to minimize API and database load, Redis-based caching.</li>
+<li>Currently extending the system with orchestrated agentic workflows for analytics and retrieval, including a Text-to-SQL interface on a unified Postgres/Redis backend.</li>
+</ul>
+<div class="stack">
+<span class="chip2">Python</span><span class="chip2">Supabase</span><span class="chip2">PostgreSQL</span>
+<span class="chip2">Railway</span><span class="chip2">Redis</span><span class="chip2">LangGraph</span>
+</div>
+</article>
+<!-- License Plate + Lane Detection -->
+<article class="card project reveal" data-tags="cv">
+<div class="project__top">
+<h3>Real-Time License Plate + Lane Detection</h3>
+<span class="tag">2024</span>
+</div>
+<p class="muted">
               Developed a real-time computer vision pipeline that detects license plates with YOLOv7 and monitors vehicle lane behavior.
             </p>
-            <ul class="bullets">
-              <li>Integrated lane detection using Hough Transforms and Bird’s-Eye transformation to track lane switches in traffic scenes.</li>
-              <li>Combined deep-learning detection with geometric lane analysis for real-time road-scene understanding.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">YOLOv7</span><span class="chip2">OpenCV</span><span class="chip2">Hough Transform</span>
-              <span class="chip2">Bird’s-Eye View</span><span class="chip2">Computer Vision</span>
-            </div>
-          </article>
-
-          <!-- Phishing -->
-          <article class="card project reveal" data-tags="mlops">
-            <div class="project__top">
-              <h3>Phishing Detection (Automated MLOps)</h3>
-              <span class="tag">10/2024 – 01/2025</span>
-            </div>
-            <p class="muted">
+<ul class="bullets">
+<li>Integrated lane detection using Hough Transforms and Bird’s-Eye transformation to track lane switches in traffic scenes.</li>
+<li>Combined deep-learning detection with geometric lane analysis for real-time road-scene understanding.</li>
+</ul>
+<div class="stack">
+<span class="chip2">YOLOv7</span><span class="chip2">OpenCV</span><span class="chip2">Hough Transform</span>
+<span class="chip2">Bird’s-Eye View</span><span class="chip2">Computer Vision</span>
+</div>
+</article>
+<!-- Phishing -->
+<article class="card project reveal" data-tags="mlops">
+<div class="project__top">
+<h3>Phishing Detection (Automated MLOps)</h3>
+<span class="tag">10/2024 – 01/2025</span>
+</div>
+<p class="muted">
               Built an end-to-end MLOps pipeline spanning ingestion, validation, transformation, training, anduation with robust preprocessing and experiment tracking.
             </p>
-            <ul class="bullets">
-              <li>Performed GridSearchCV tuning with KNN imputation and SMOTE, comparing RF/DT/GB/LR models while tracking metrics in MLflow with DagsHub.</li>
-              <li>Implemented ETL with MongoDB and AWS S3, containerized the workflow with Docker, and deployed via GitHub Actions CI/CD through ECR to EC2.</li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">Docker</span>
-              <span class="chip2">AWS ECR</span><span class="chip2">AWS EC2</span><span class="chip2">MongoDB</span>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Experience</h2>
-          <p class="muted">Research and industry internships spanning AI, CV, and embedded/IoT systems.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="card timeline__item reveal">
-            <div class="timeline__top">
-              <h3>ML Research Intern — Center for Advanced Data Science, VIT</h3>
-              <span class="tag">03/2023 – 10/2023 • Chennai, India</span>
-            </div>
-            <ul class="bullets">
-              <li>Achieved 97% average accuracy in multilingual signature classification across 4 languages, by designing a two-stage Siamese 
+<ul class="bullets">
+<li>Performed GridSearchCV tuning with KNN imputation and SMOTE, comparing RF/DT/GB/LR models while tracking metrics in MLflow with DagsHub.</li>
+<li>Implemented ETL with MongoDB and AWS S3, containerized the workflow with Docker, and deployed via GitHub Actions CI/CD through ECR to EC2.</li>
+</ul>
+<div class="stack">
+<span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">Docker</span>
+<span class="chip2">AWS ECR</span><span class="chip2">AWS EC2</span><span class="chip2">MongoDB</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+<div class="container">
+<div class="section__head reveal">
+<h2>Experience</h2>
+<p class="muted">Research and industry internships spanning AI, CV, and embedded/IoT systems.</p>
+</div>
+<div class="timeline">
+<div class="card timeline__item reveal">
+<div class="timeline__top">
+<h3>ML Research Intern — Center for Advanced Data Science, VIT</h3>
+<span class="tag">03/2023 – 10/2023 • Chennai, India</span>
+</div>
+<ul class="bullets">
+<li>Achieved 97% average accuracy in multilingual signature classification across 4 languages, by designing a two-stage Siamese 
               network with MobileNet-V2, trained using TensorFlow tf.data (parallel map, prefetch) and A100 GPU acceleration, reducing 
               training time by ~18% through input-pipeline optimization.</li>
-              <li>Attained 88% recall in signature detection by implementing YOLOv5/v7/v8 (DataLoader parallelism) for region extraction and 
+<li>Attained 88% recall in signature detection by implementing YOLOv5/v7/v8 (DataLoader parallelism) for region extraction and 
               deploying MobileNet-V2 via AWS SageMaker endpoints, with a lightweight detection pipeline running locally on a Raspberry Pi 4. </li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">Python</span><span class="chip2">OpenCV</span><span class="chip2">YOLO</span><span class="chip2">Raspberry Pi</span>
-            </div>
-          </div>
-
-          <div class="card timeline__item reveal">
-            <div class="timeline__top">
-              <h3>Embedded Systems Design Intern — Voltech Group</h3>
-              <span class="tag">07/2023 – 08/2023 • Chennai, India</span>
-            </div>
-            <ul class="bullets">
-              <li>Built an IoT-based telemetry pipeline for SMPS battery chargers using a NodeMCU web server, acquiring voltage and 
+</ul>
+<div class="stack">
+<span class="chip2">Python</span><span class="chip2">OpenCV</span><span class="chip2">YOLO</span><span class="chip2">Raspberry Pi</span>
+</div>
+</div>
+<div class="card timeline__item reveal">
+<div class="timeline__top">
+<h3>Embedded Systems Design Intern — Voltech Group</h3>
+<span class="tag">07/2023 – 08/2023 • Chennai, India</span>
+</div>
+<ul class="bullets">
+<li>Built an IoT-based telemetry pipeline for SMPS battery chargers using a NodeMCU web server, acquiring voltage and 
               temperature via ADCs and enabling real-time operational monitoring. </li>
-              <li> Extended the pipeline with GRU/LSTM-based time-series forecasting on voltage–current data, achieving ~20% lower RMSE over 
+<li> Extended the pipeline with GRU/LSTM-based time-series forecasting on voltage–current data, achieving ~20% lower RMSE over 
               a naïve baseline and operationalized model inference via AWS SageMaker, API Gateway, Lambda, and CloudWatch. </li>
-            </ul>
-            <div class="stack">
-              <span class="chip2">ESP8266/ESP32</span><span class="chip2">REST APIs</span><span class="chip2">IoT</span><span class="chip2">ThingSpeak</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section section--alt">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Publications</h2>
-          <p class="muted">Peer-reviewed work and conference publication.</p>
-        </div>
-
-        <div class="grid2">
-          <article class="card reveal">
-            <h3>Frontiers in Artificial Intelligence (2025)</h3>
-            <p class="muted">
+</ul>
+<div class="stack">
+<span class="chip2">ESP8266/ESP32</span><span class="chip2">REST APIs</span><span class="chip2">IoT</span><span class="chip2">ThingSpeak</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PUBLICATIONS -->
+<section class="section section--alt" id="publications">
+<div class="container">
+<div class="section__head reveal">
+<h2>Publications</h2>
+<p class="muted">Peer-reviewed work and conference publication.</p>
+</div>
+<div class="grid2">
+<article class="card reveal">
+<h3>Frontiers in Artificial Intelligence (2025)</h3>
+<p class="muted">
               Enhanced plant disease classification with attention-based CNN using squeeze-and-excitation mechanism.
             </p>
-            <ul class="bullets">
-              <li>CNN-SEEIB with SE-enabled identity blocks; 99.79% accuracy on PlantVillage; 64ms inference on T4 GPU.</li>
-            </ul>
-            <div class="links">
-              <a class="btn btn--small btn--secondary" target="_blank" rel="noopener"
-                 href="https://doi.org/10.3389/frai.2025.1640549">DOI</a>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <h3>ACM IT IoT Smart City (2023) — Best Presentation</h3>
-            <p class="muted">
+<ul class="bullets">
+<li>CNN-SEEIB with SE-enabled identity blocks; 99.79% accuracy on PlantVillage; 64ms inference on T4 GPU.</li>
+</ul>
+<div class="links">
+<a class="btn btn--small btn--secondary" href="https://doi.org/10.3389/frai.2025.1640549" rel="noopener" target="_blank">DOI</a>
+</div>
+</article>
+<article class="card reveal">
+<h3>ACM IT IoT Smart City (2023) — Best Presentation</h3>
+<p class="muted">
               Leveraging Deep Learning for Improving Real-Time Stolen Vehicle Tracking in Smart Cities.
             </p>
-            <ul class="bullets">
-              <li>YOLOv7 + DeepSORT system for multi-camera stolen vehicle detection with interactive mapping.</li>
-            </ul>
-            <div class="links">
-              <a class="btn btn--small btn--secondary" target="_blank" rel="noopener"
-                 href="https://dl.acm.org/doi/10.1145/3638985.3639026">DOI</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Skills</h2>
-          <p class="muted">Core tools and technologies from my projects and experience.</p>
-        </div>
-
-        <div class="skillGrid">
-          <div class="card reveal">
-            <h3>Languages &amp; Frameworks</h3>
-            <div class="chipsWrap">
-              <span class="chip2">C++</span><span class="chip2">Python</span><span class="chip2">Java</span><span class="chip2">TypeScript</span>
-              <span class="chip2">Tailwind</span><span class="chip2">React.js</span><span class="chip2">Node.js</span><span class="chip2">Spring Boot</span>
-              <span class="chip2">Django</span><span class="chip2">FastAPI</span><span class="chip2">Pydantic</span><span class="chip2">Flask</span>
-              <span class="chip2">Streamlit</span><span class="chip2">Gradio</span><span class="chip2">Scikit-learn</span><span class="chip2">OpenCV</span>
-              <span class="chip2">PyTorch</span><span class="chip2">TensorFlow</span><span class="chip2">Keras</span><span class="chip2">Apache Spark</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>OS, Tools &amp; Databases</h3>
-            <div class="chipsWrap">
-              <span class="chip2">Linux</span><span class="chip2">Git</span><span class="chip2">Docker</span><span class="chip2">Kubernetes</span>
-              <span class="chip2">Kafka</span><span class="chip2">Airflow</span><span class="chip2">REST APIs</span><span class="chip2">OAuth</span>
-              <span class="chip2">Terraform</span><span class="chip2">AWS</span><span class="chip2">GCP</span><span class="chip2">Azure</span>
-              <span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">DVC</span><span class="chip2">Grafana</span>
-              <span class="chip2">Groq</span><span class="chip2">NVIDIA NIM</span><span class="chip2">LangChain</span><span class="chip2">LangGraph</span>
-              <span class="chip2">MCP</span><span class="chip2">CrewAI</span><span class="chip2">FAISS</span><span class="chip2">ChromaDB</span>
-              <span class="chip2">Neo4j</span><span class="chip2">Redis</span><span class="chip2">PostgreSQL</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>Core Competencies</h3>
-            <div class="chipsWrap">
-              <span class="chip2">ML Systems</span><span class="chip2">MLOps / LLMOps</span><span class="chip2">Experiment Tracking</span>
-              <span class="chip2">ETL Pipelines</span><span class="chip2">Data Processing at Scale</span><span class="chip2">Semantic Search</span>
-              <span class="chip2">LLMs</span><span class="chip2">Prompt Engineering</span><span class="chip2">RAG</span><span class="chip2">Knowledge Graphs</span>
-              <span class="chip2">Computer Vision</span><span class="chip2">Database Systems</span><span class="chip2">Android Development</span>
-              <span class="chip2">EDA</span><span class="chip2">Multilingual Translation</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>Currently Exploring</h3>
-            <p class="muted small">
-              Conversational AI & agents, reliability-minded deployment, and scalableuation pipelines.
+<ul class="bullets">
+<li>YOLOv7 + DeepSORT system for multi-camera stolen vehicle detection with interactive mapping.</li>
+</ul>
+<div class="links">
+<a class="btn btn--small btn--secondary" href="https://dl.acm.org/doi/10.1145/3638985.3639026" rel="noopener" target="_blank">DOI</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="section" id="skills">
+<div class="container">
+<div class="section__head reveal">
+<h2>Skills</h2>
+<p class="muted">Core tools and technologies from my projects and experience.</p>
+</div>
+<div class="skillGrid">
+<div class="card reveal">
+<h3>Languages &amp; Frameworks</h3>
+<div class="chipsWrap">
+<span class="chip2">C++</span><span class="chip2">Python</span><span class="chip2">Java</span><span class="chip2">TypeScript</span>
+<span class="chip2">Tailwind</span><span class="chip2">React.js</span><span class="chip2">Node.js</span><span class="chip2">Spring Boot</span>
+<span class="chip2">Django</span><span class="chip2">FastAPI</span><span class="chip2">Pydantic</span><span class="chip2">Flask</span>
+<span class="chip2">Streamlit</span><span class="chip2">Gradio</span><span class="chip2">Scikit-learn</span><span class="chip2">OpenCV</span>
+<span class="chip2">PyTorch</span><span class="chip2">TensorFlow</span><span class="chip2">Keras</span><span class="chip2">Apache Spark</span>
+</div>
+</div>
+<div class="card reveal">
+<h3>OS, Tools &amp; Databases</h3>
+<div class="chipsWrap">
+<span class="chip2">Linux</span><span class="chip2">Git</span><span class="chip2">Docker</span><span class="chip2">Kubernetes</span>
+<span class="chip2">Kafka</span><span class="chip2">Airflow</span><span class="chip2">REST APIs</span><span class="chip2">OAuth</span>
+<span class="chip2">Terraform</span><span class="chip2">AWS</span><span class="chip2">GCP</span><span class="chip2">Azure</span>
+<span class="chip2">MLflow</span><span class="chip2">DagsHub</span><span class="chip2">DVC</span><span class="chip2">Grafana</span>
+<span class="chip2">Groq</span><span class="chip2">NVIDIA NIM</span><span class="chip2">LangChain</span><span class="chip2">LangGraph</span>
+<span class="chip2">MCP</span><span class="chip2">CrewAI</span><span class="chip2">FAISS</span><span class="chip2">ChromaDB</span>
+<span class="chip2">Neo4j</span><span class="chip2">Redis</span><span class="chip2">PostgreSQL</span>
+</div>
+</div>
+<div class="card reveal">
+<h3>Core Competencies</h3>
+<div class="chipsWrap">
+<span class="chip2">ML Systems</span><span class="chip2">MLOps / LLMOps</span><span class="chip2">Experiment Tracking</span>
+<span class="chip2">ETL Pipelines</span><span class="chip2">Data Processing at Scale</span><span class="chip2">Semantic Search</span>
+<span class="chip2">LLMs</span><span class="chip2">Prompt Engineering</span><span class="chip2">RAG</span><span class="chip2">Knowledge Graphs</span>
+<span class="chip2">Computer Vision</span><span class="chip2">Database Systems</span><span class="chip2">Android Development</span>
+<span class="chip2">EDA</span><span class="chip2">Multilingual Translation</span>
+</div>
+</div>
+<div class="card reveal">
+<h3>Currently Exploring</h3>
+<p class="muted small">
+              Conversational AI &amp; agents, reliability-minded deployment, and scalableuation pipelines.
             </p>
-            <div class="chipsWrap">
-              <span class="chip2">Conversational AI</span>
-              <span class="chip2">Agentic Workflows</span>
-              <span class="chip2">Service Reliability</span>
-              <span class="chip2">Observability</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Contact</h2>
-          <p class="muted">Open to collaborations, research discussions, and engineering conversations.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="card reveal">
-            <h3>Reach out</h3>
-            <div class="contactRow">
-              <span class="muted">Email</span>
-              <button class="linkBtn" id="copyEmail2" type="button">skarthiksubramanian0704@gmail.com (copy)</button>
-            </div>
-            <div class="contactRow">
-              <span class="muted">LinkedIn</span>
-              <a class="linkBtn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/karthik-s-095588259/">linkedin.com/in/karthik-s-095588259</a>
-            </div>
-            <div class="contactRow">
-              <span class="muted">GitHub</span>
-              <a class="linkBtn" target="_blank" rel="noopener" href="https://github.com/Karthik-0704">github.com/Karthik-0704</a>
-            </div>
-
-            <div class="divider"></div>
-
-          </div>
-
-          <div class="card reveal">
-            <h3>Quick message</h3>
-            <p class="muted small">This opens your email client with a pre-filled subject.</p>
-            <a class="btn btn--primary"
-               href="mailto:skarthiksubramanian0704@gmail.com?subject=Portfolio%20-%20Karthikeyan%20Sivasubramanian&body=Hi%20Karthikeyan%2C%0A%0A"
-            >
+<div class="chipsWrap">
+<span class="chip2">Conversational AI</span>
+<span class="chip2">Agentic Workflows</span>
+<span class="chip2">Service Reliability</span>
+<span class="chip2">Observability</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section section--alt" id="contact">
+<div class="container">
+<div class="section__head reveal">
+<h2>Contact</h2>
+<p class="muted">Open to collaborations, research discussions, and engineering conversations.</p>
+</div>
+<div class="grid2">
+<div class="card reveal">
+<h3>Reach out</h3>
+<div class="contactRow">
+<span class="muted">Email</span>
+<button class="linkBtn" id="copyEmail2" type="button">skarthiksubramanian0704@gmail.com (copy)</button>
+</div>
+<div class="contactRow">
+<span class="muted">LinkedIn</span>
+<a class="linkBtn" href="https://www.linkedin.com/in/karthik-s-095588259/" rel="noopener" target="_blank">linkedin.com/in/karthik-s-095588259</a>
+</div>
+<div class="contactRow">
+<span class="muted">GitHub</span>
+<a class="linkBtn" href="https://github.com/Karthik-0704" rel="noopener" target="_blank">github.com/Karthik-0704</a>
+</div>
+<div class="divider"></div>
+</div>
+<div class="card reveal">
+<h3>Quick message</h3>
+<p class="muted small">This opens your email client with a pre-filled subject.</p>
+<a class="btn btn--primary" href="mailto:skarthiksubramanian0704@gmail.com?subject=Portfolio%20-%20Karthikeyan%20Sivasubramanian&amp;body=Hi%20Karthikeyan%2C%0A%0A">
               Email Me
             </a>
-
-            <div class="divider"></div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <span class="muted small">© <span id="year"></span> Karthikeyan Sivasubramanian</span>
-        <a class="muted small" href="#top">Back to top ↑</a>
-      </div>
-    </footer>
-  </main>
-
-  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-
-  <script src="script.js"></script>
+<div class="divider"></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container footer__inner">
+<span class="muted small">© <span id="year"></span> Karthikeyan Sivasubramanian</span>
+<a class="muted small" href="#top">Back to top ↑</a>
+</div>
+</footer>
+</main>
+<div aria-atomic="true" aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
 </body>
 </html>
